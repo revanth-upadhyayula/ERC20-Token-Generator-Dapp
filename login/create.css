@@ -1,0 +1,227 @@
+/* CSS styles from register.css */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 45%;
+    transform: translateX(-50%);
+    width: 100%;
+}
+
+.logo {
+    padding-left: 260px;
+    width: 140px; /* Adjust the width of the logo */
+    height: auto; /* Maintain aspect ratio */
+    color: #3e79e3; /* Updated logo color */
+    font-size: 28px;
+    margin-left: -115px;
+    padding-top: 38px;
+    padding-right: 182px;
+}
+
+section {
+    display: flex;
+    justify-content: flex-start; /* Updated to move login section to the left */
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background-color: #f4fdfe; /* Updated background color to white */
+}
+
+.form-box {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background-color: #f4fdfe; /* Updated background color to white */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Updated to align content vertically */
+}
+
+h2 {
+    font-size: 2em;
+    color: #3e79e3; /* Updated heading color */
+    text-align: center;
+}
+p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inputbox {
+    position: relative;
+    margin: 30px 0 0 0;
+    width: 100%; /* Updated width to 80% */
+    border-bottom: 2px solid #3e79e3; /* Updated border color */
+}
+
+input:focus ~ label,
+input:valid ~ label {
+    top: -5px;
+}
+
+.inputbox input {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding: 0 35px 0 5px;
+    color: #3e79e3; /* Updated text color */
+}
+
+.inputbox label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #3e79e3;
+    font-size: 1em;
+    pointer-events: none;
+    transition: .7s;
+}
+
+.inputbox ion-icon {
+    position: absolute;
+    right: 8px;
+    color: #3e79e3;
+    font-size: 1.2em;
+    top: 20px;
+}
+
+
+button {
+    width: 90%; /* Updated width to 80% */
+    height: 40px;
+    border-radius: 40px;
+    background: #3e79e3; /* Updated button background color */
+    color: #fff; /* Updated button text color */
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+    margin: 10px 0 10px 10px;
+}
+#connectButton {
+    width: 30%;
+    height: 40px;
+    border-radius: 40px;
+    background: #3e79e3; /* Updated button background color */
+    color: #fff; /* Updated button text color */
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 0.8em;
+    font-weight: 400;
+    margin: 2px 0 13px 16px;
+
+}
+
+#transaction-hash {
+    color: #3e79e3;
+}
+img {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 70px;
+}
+
+/* Responsive styles for phones */
+@media (max-width: 1044px) {
+    /* Adjust form width and margins */
+    .form-box {
+        width: 60%;
+        margin: 0px auto 0px auto;
+        display: block;
+        position: relative;
+    }
+
+    /* Adjust input fields */
+    .inputbox {
+        margin-bottom: 20px;
+    }
+
+    /* Adjust font sizes */
+    h2 {
+        font-size: 34px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    /* Adjust button size */
+    button {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+
+    /* Adjust logo size and position */
+    .logo {
+        width: 37%; /* Decrease the logo size */
+        margin: 0 auto; /* Center the logo */
+    }
+
+    /* Adjust error message styling */
+    .registration-error, .registration-success {
+        font-size: 14px;
+        padding: 8px;
+        margin-bottom: 10px;
+    }
+}
+@media (max-width: 900px) {
+    /* Adjust form width and margins */
+    .form-box {
+        width: 70%;
+        margin: 0px auto 0px auto;
+        display: block;
+        position: relative;
+    }
+
+    /* Adjust input fields */
+    .inputbox {
+        margin-bottom: 20px;
+    }
+
+    /* Adjust font sizes */
+    h2 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    /* Adjust button size */
+    button {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+
+    /* Adjust logo size and position */
+    .logo {
+        width: 30%; /* Decrease the logo size */
+        margin: 0 auto; /* Center the logo */
+    }
+
+    /* Adjust error message styling */
+    .registration-error, .registration-success {
+        font-size: 14px;
+        padding: 8px;
+        margin-bottom: 10px;
+    }
+}

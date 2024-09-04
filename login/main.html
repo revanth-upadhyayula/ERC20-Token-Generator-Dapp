@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/web3@1.6.0/dist/web3.min.js"></script>
+<link rel="stylesheet" href="main.css">
+<title>EtherealMint</title>
+</head>
+<body>
+<header class="header">
+    <a href="#" class="logo"><img src="Mainlogo.png" class="logo" alt="Logo"></a>        
+    <input type="checkbox" id="check">
+    <label for="check" class="icons">
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <i class='bx bx-x' id="close-icon"></i>
+    </label>
+
+    <nav class="navbar">
+        <a href="#main" style="--i:0">Home</a>
+        <a href="#faq" style="--i:1">FAQ's</a>
+        <a href="#about" style="--i:2">About</a>
+        <button id="connectButton">Connect to MetaMask</button>
+    </nav>
+</header>
+
+<div class="content-wrapper">
+    <section class="main-content" id="main">
+        <h2>ERC20 Token</h2>
+        <p>ERC-20 tokens are sets of 'fungible' digital tokens that live on the Ethereum network. Fungible here means that each token in the set is indistinguishable from every other token in the set. This is analogous to how one US dollar is effectively indistinguishable from every other US dollar (at least in the digital realm). When it comes to ERC-20 tokens, each set is differentiated by a ticker symbol like ABC or XYZ.</p>
+
+        <!-- Input field for GST number -->
+        <div class="inputbox">
+            <input type="text" id="PAN" placeholder="enter PAN card number" required>
+            <button id="validateButton">Validate</button>
+            <div class="error-message" id="PAN-error"></div>
+        </div>
+    </section>
+    <section id="faq" class="section">
+        <h2>FAQ's</h2>
+        <div class="faq-content">
+            <div class="faq-question">
+                <h3>What is Ethereum?</h3>
+                <p>Ethereum is a decentralized, open-source blockchain system that features smart contract functionality.</p>
+            </div>
+            <div class="faq-question">
+                <h3>What are ERC-20 tokens?</h3>
+                <p>ERC-20 tokens are fungible tokens on the Ethereum blockchain that follow a specific set of rules.</p>
+            </div>
+            <div class="faq-question">
+                <h3>How does an ERC20 token generator work?</h3>
+                <p>Typically, users provide details such as token name, symbol, supply, and other parameters, and the generator creates the corresponding smart contract code for the token.
+                </p>
+            </div>
+            <div class="faq-question">
+                <h3>Is it safe to use an ERC20 token generator?</h3>
+                <p>The safety depends on the reputation and security measures implemented by the specific generator.</p>
+            </div>
+            <div class="faq-question">
+                <h3>What are the advantages of using an ERC20 token generator?</h3>
+                <p>It provides an easy and quick way to create custom tokens without requiring extensive coding knowledge. </p>
+            </div>
+            <!-- Add more FAQ questions and answers as needed -->
+        </div>
+            
+    </section>
+    
+    <section id="about" class="section">
+        <h2>About Us</h2>
+        <p>We are a team passionate about blockchain technology and its potential to revolutionize various industries.</p>
+        
+        <div class="social-icons">
+            <a href="#" class="social-icon"><i class='bx bxl-instagram'></i></a>
+            <a href="mailto:your@email.com" class="social-icon"><i class='bx bx-mail-send'></i></a>
+            <a href="#" class="social-icon"><i class='bx bxl-facebook'></i></a>
+            <a href="#" class="social-icon"><i class='bx bxl-twitter'></i></a>
+            <a href="#" class="social-icon"><i class='bx bxl-linkedin'></i></a>
+        </div>
+    </section>
+</div>
+
+<div class="video-container">
+    <video id="background-video" autoplay loop muted>
+        <source src="main.mp4" type="video/mp4">
+    </video>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>

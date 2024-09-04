@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="create.css">
+<script src="https://cdn.jsdelivr.net/npm/web3@1.6.0/dist/web3.min.js"></script>
+<title>EtherealMint - Create Token</title>
+</head>
+<body>
+    <div class="hero">
+        <a href="main.html"><img src="Mainlogo.png" class="logo" alt="Logo"></a>
+        <button id="connectButton">Connect to MetaMask</button>
+        <!-- <div id="status"></div> -->
+    </div>
+
+    <section>
+        <div class="form-box">
+            <div class="form-value">
+                <form id="create-token-form">
+                    <h2>Create a Token</h2>
+                    <p>Please fill in the details below</p>
+                    <div class="inputbox">
+                        <ion-icon name="reorder-two-outline"></ion-icon>
+                        <input type="text" id="tokenName" required>
+                        <label for="tokenName">Token Name</label>
+                    </div>
+                    <div class="inputbox">
+                        <ion-icon name="logo-bitcoin"></ion-icon>
+                        <input type="text" id="tokenSymbol" required>
+                        <label for="tokenSymbol">Token Symbol</label>
+                    </div>
+                    <div class="inputbox">
+                        <ion-icon name="cash-outline"></ion-icon>
+                        <input type="number" id="totalSupply" min="1" step="1" required>
+                        <label for="totalSupply">Total Supply</label>
+                    </div>
+                    <button type="submit">Create Token</button>
+                
+                </form>
+            </div>
+            <div id="transaction-hash" ></div>
+        </div>
+        <img src="create.jpg" alt="create">
+    </section>
+    
+    
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script src="create.js"></script>
+</body>
+</html>

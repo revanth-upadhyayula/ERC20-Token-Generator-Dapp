@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="main2.css">
+<title>EtherealMint</title>
+<style>
+    /* Hide scroll bars while enabling scrolling */
+    body {
+        margin: 0;
+        overflow: hidden;
+    }
+
+    /* Set negative margins to shift content off-screen slightly */
+    .content-wrapper {
+        margin: 0 -16px; /* Adjust this value according to your scrollbar width */
+        padding: 0 16px; /* Adjust this value according to your scrollbar width */
+        overflow-y: auto;
+        height: 100vh;
+    }
+</style>
+</head>
+<body>
+<header class="header">
+    <a href="#" class="logo"><img src="Mainlogo.png" class="logo" alt="Logo"></a>        
+    <input type="checkbox" id="check">
+    <label for="check" class="icons">
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <i class='bx bx-x' id="close-icon"></i>
+    </label>
+
+    
+</header>
+
+<div class="content-wrapper">
+    <section class="main-content" id="main">
+        <h2>ERC20 Token</h2>
+        <p>ERC-20 tokens are sets of 'fungible' digital tokens that live on the Ethereum network. Fungible here means that each token in the set is indistinguishable from every other token in the set. This is analogous to how one US dollar is effectively indistinguishable from every other US dollar (at least in the digital realm). When it comes to ERC-20 tokens, each set is differentiated by a ticker symbol like ABC or XYZ.</p>
+        
+        <!-- Buttons -->
+        <div class="buttons">
+            <button class="create-button" id="createButton" target="_blank">Create</button>
+            <button class="transfer-button" id="transferButton" target="_blank">Transfer</button>
+        </div>
+    </section>
+    
+</div>
+
+<div class="video-container">
+    <video id="background-video" autoplay loop muted>
+        <source src="main.mp4" type="video/mp4">
+    </video>
+</div>
+
+<script src="main2.js"></script>
+</body>
+</html>
